@@ -60,7 +60,7 @@ logout
 ssh -o PublicAuthentication=no <username>@<ip-address-server>
 ```
 
-**IT SHOULD BE WORKS ONLY WITH YOUR SSH-KEY!**
+**IT SHOULD ONLY WORK WITH YOUR SSH KEY!**
 
 ```bash
 ssh -i path/to/your/private-key <username>@<ip-address-server>
@@ -114,17 +114,15 @@ systemctl status nginx.service
 - open your browser with `<ip-address-server>:8081` to see your configured alternative start page for the nginx webserver
 
 #### Default page and config
-- default html
+- 
 ```bash
+# default html
 /var/www/html/index.nginx-debian.html
-```
 
-- default webserver config
-```bash
+# default webserver config
 /etc/nginx/sites-enabled/default
-```
 
-- Nginx config
-```bash
+Nginx config
 /etc/nginx/nginx.conf
 ```
+
